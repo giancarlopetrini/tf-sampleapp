@@ -1,7 +1,6 @@
 resource "aws_lambda_function" "lambda" {
   function_name = "lambda-apigateway"
 
-  # The bucket name as created earlier with "aws s3api create-bucket"
   s3_bucket = "giancarlopetrini-s3-lambda"
   s3_key    = "lambda.zip"
 
